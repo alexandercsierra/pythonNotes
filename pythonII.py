@@ -78,7 +78,10 @@ class MedianFetcher:
         self.numbers = []
 
     def insert(self, n):
-        pass
+        self.numbers.append(n) #can't chain methods, append doesn't return anything
+        self.numbers.sort() #don't need to store it, will change original list
 
     def get_median():
-        pass
+        #is length of list odd or even?
+            #if odd, return middle number
+            #if even, get the average of the two middle numbers
