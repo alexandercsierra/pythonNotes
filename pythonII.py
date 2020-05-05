@@ -55,20 +55,21 @@ print(l)
 #every method will have self as an argument
     #can give __init__ second argument to pass something into the function
 
-class MedianFetcherOutline:
-    def __init__(self):
-        #define all the attributes on 'self', similar to 'this' in JS
-        self.median = None
-        #None is approx the same as null and undefined
+# class MedianFetcherOutline:
+#     def __init__(self):
+#         #define all the attributes on 'self', similar to 'this' in JS
+#         self.median = None
+#         #None is approx the same as null and undefined
+#         #Didn't end up using :shrug:
 
-    #inserts the value n into our class
-    def insert(self, n):
-        #where do we store n?
-            #maybe we store it in self.median?
-            #what happens when we insert more values?
+#     #inserts the value n into our class
+#     def insert(self, n):
+#         #where do we store n?
+#             #maybe we store it in self.median?
+#             #what happens when we insert more values?
 
-    def get_median():
-        pass
+#     def get_median():
+#         pass
 
 
 
@@ -79,9 +80,27 @@ class MedianFetcher:
 
     def insert(self, n):
         self.numbers.append(n) #can't chain methods, append doesn't return anything
-        self.numbers.sort() #don't need to store it, will change original list
+        self.numbers.sort() #don't need to store it, will change original list. This could also be put at the beginning of get_median (maybe more efficient?)
 
-    def get_median():
+    def get_median(self):
+        if len(self.numbers) == 0:
+            return None
         #is length of list odd or even?
+        mid = len(self.numbers) // 2
+        if len(self.numbers) % 2 == 1:
             #if odd, return middle number
+            return self.numbers[mid]
+        else:
             #if even, get the average of the two middle numbers
+            #grab the element right before the mid element
+            other = self.numbers[mid-1]
+            return (other + self.numbers[mid])/2
+
+#floor to get to closest whole number when dividing:
+    # 5 // 2  would be equal to 2
+    # you might think to add 1 to get middle number, but considering a zero index, you don't have to add 1
+
+medianFetcher = MedianFetcher()
+medianFetcher.insert(5)
+medianFetcher.insert(10)
+print(medianFetcher.get_median()) # should return 7.5
