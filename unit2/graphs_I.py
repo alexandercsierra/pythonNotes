@@ -36,3 +36,16 @@ Graph weights
         it is abstract and could really represent anything (road smoothness, number of hills, train fare, etc)
 
 '''
+
+
+#representing graphs: adjacency matricies and adjacency lists
+
+class Linked_List_Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class Graph_Node:
+    def __init__(self, value):
+        self.value = value
+        self.edges = [] #adjacency list
