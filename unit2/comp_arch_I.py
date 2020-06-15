@@ -152,7 +152,7 @@ while running:
     elif ir == SAVE_REG:
         reg_num = memory[pc+1]
         value = memory[pc+2]
-        register[reg_num] == value
+        register[reg_num] = value
         pc +=3
     elif ir == PRINT_REG:
         reg_num = memory[pc + 1]
