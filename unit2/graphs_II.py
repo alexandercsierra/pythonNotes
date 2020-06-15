@@ -56,3 +56,37 @@ How to Solve Graph Problems
 3. traverse/search
 
 '''
+
+
+def find_word_ladders(begin_word, end_word):
+    visited = set()
+
+    q = Queue()
+
+    q.enqueue([begin_word])
+
+    while q.size() > 0:
+        path = q.dequeue()
+        cur_word = path[-1] #get last node in path
+
+        if cur_word not in visited:
+            visited.add(cur_word)
+
+            if cur_word == end_word:
+                return path
+
+            for neighbor in get_neighbors(cur_word):
+                #if you pass in a list to list() will make a copy
+                path_copy = list(path)
+                path_copy.append(neighbor)
+                q.enqueue(path_copy)
+
+    #could not find a path to end_word
+    return None
+
+
+'''
+Works without a graph class, just using a get_neighbors function
+
+adj_list or matrix is really just answering the question, what are all the neighbors?
+'''
