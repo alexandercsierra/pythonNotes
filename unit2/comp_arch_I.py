@@ -179,5 +179,5 @@ ls8 where the code is
     readme has more detail (not split by day)
 ls8-spec - has all the details that you need to know
 main readme - high level overview of what we want to do
-
+examples directory contains programs that your emulator will be able to run
 '''
