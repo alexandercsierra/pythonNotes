@@ -127,3 +127,58 @@ elif ir == RET:
 '''
 In ls-8, C bit determines whether it sets the PC, but maybe does sometimes
 '''
+
+#For the sprint - jumps and conditional jumps
+#conditional jumps are last thing keeping this emulator from being turing complete
+
+
+'''
+Interrupts
+-------------
+
+How the CPU knows that peripheral needs attention
+IRET - pushes all the registers of the stack
+handle the interrupt
+pop the registers off the stack
+
+
+Interrupt vector table stores pointers to where to go to handle certain interrupts
+    -calls a driver that knows how to interact with the hardware
+
+(for ls8)
+timer interrupt - called one time per second
+keyboard interrupt - stores key in F4
+'''
+
+
+'''
+Python variables 
+-----------------
+
+variable a:
+    pointer to the data -----> "hello, world" (ref count: 3)
+                                     ^         
+                                     |
+variable b:                          |
+pointer to the data -----------------+
+
+variable c:
+    pointer to the data -----> "hello, world" (ref count: 2)
+
+a = "hello world"
+b = a
+
+id(a) = id(b)
+
+c = "hello world"
+id(c) != id(a)
+
+
+sys.getrefcount(a) (adds one which is why above is 3 and 2 simply by getting the refcount)
+getrecount is a function, which has a stack frame, creating a copy of the variable and adding 1 to the refcount
+
+
+when reference count gets to zero it gets garbage-collected (memory gets freed up for something else)
+
+
+'''
