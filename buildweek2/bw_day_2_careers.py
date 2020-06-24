@@ -50,7 +50,7 @@ Unfinished projects
 *if there's something cool in there, talk about that
 
 Don't know the answer to a straightforward knowledge program
-"Pick the closest thing to the tech that I'd worked on. And admit that I'd not pursued that particular tech in detail. I'd list everything at all I did know about it.
+"Pick the closest thing to the tech that I'd worked on. And admit that I'd not pursued that particular tech in detail. I'd list everything at all I did know about it. 
 And add that it's on my list as something to research."
 
 '''
