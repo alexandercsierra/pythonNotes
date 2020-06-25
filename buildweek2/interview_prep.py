@@ -59,4 +59,36 @@ Have you ever made a mistake, how did you handle it?
 How would your coworkers describe me?
 *upsell the soft skills
 *avoid being arrogant or cheesy
+
+
+What kind of work environment are you looking for in the next opportunity you take?
+*where I can grow
+*give specifics about the company (small if interviewing company is small)
+*mention culture
+
+Can you explain why you changed career paths?
+*tie in past experience to current objective
+    *not just in passing (responsibilities at past jobs, etc)
+    *maybe communication skills?
+
+Have you ever had a project that had to change drastically while it was in progress? Why and how did you do it?
+*bw (probably spotify song suggester)
+*demonstrate adapatability
+    *doesn't stress you out
+    *can work under a time crunch
+
+Talk about a major setback? How did you deal with it?
+*labs project 
+
+
+Where do you see yourself in 3-5 years?
+*still growing, willing to learn anything new
+    *if opportunity for new school, get involved
+*hopefully leadership
+*be a part of a strong team
+
+recommended - research the career path for SE
+
+Give an example of a goal you reached and tell us how you acheived it.
+*break down your steps to acheiving the goal
 '''
